@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-color: #334;
     font-family: sans-serif;
+    box-sizing: border-box;
 
     /*--- variables --- */
 
@@ -10,6 +11,7 @@ body{
     --body-app-color: #075E54;
     --app-details-color: #25D366;
     --settings-color: #333;
+    --text-color: whitesmoke;
 }
 
 ul{
@@ -44,74 +46,99 @@ h2,h3, p{
     margin: 0 auto; 
 }
 
-.app header{
+header ul{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5% 2% 5%;
     background-color: var(--header-color);
-    height: 12%;
-    
-    
+}
+
+header li{
+    list-style-type: none;
+    display: inline-block;
     
 }
 
-.app footer{
+header h3{
+    color: var(--text-color);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 10px;
+    
+}
+
+nav{
+    background-color: var(--settings-color);
+}
+
+.nav__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 3% 5%;
+    
+}
+
+.nav__links li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav__links li a{
+    color: var(--text-color); 
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.nav__links .active{
+    border-bottom: 1px solid var(--app-details-color);
+    padding-bottom: 0.3em;
+}
+
+
+/* .app footer{
     height: 8%;
     background-color: var(--settings-color);
 
-}
-
-.header--settings{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    
-    
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1.5em;
-    padding-right: 1.2em;
-    color: whitesmoke;
-    /* margin-left: 20px; */
-}
-
-header i{
-    margin-right: 20px;
-}
-
-.header--names{
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-
-    color: whitesmoke;
-    text-transform: uppercase;
-    /* padding-left: 0.7em; */
-    padding-right: 1.2em;  
-}
-
-.header--names p:nth-child(2) {
-    border-bottom: 2px solid var(--app-details-color);
-    padding-bottom: 0.5em;
-    margin-left: -40px;
-    
-    
-}
+} */
 
 .app main{
-    height: 80%;
+    height: 81.5%;
     /* overflow: auto; */
     overflow-y: scroll;
     background-color: var(--body-app-color);
 }
 
-.settings--footer{
-   color: whitesmoke;
-   font-size: 1.2em;
-   text-align: center;
-   padding: 1em 0;
+.settings__footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   padding: 2% 10%;
+   background-color: var(--settings-color);
 }
 
-.settings--footer i{
-    padding: 0 20px;
+.settings__footer li{
+    list-style-type: none;
+    display: inline-block;
 }
+
+.settings__footer li a{
+    color: var(--text-color); 
+    text-decoration: none;  
+}
+
 
 /* --- CONTACTS --- */
 
