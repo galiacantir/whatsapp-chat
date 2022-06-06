@@ -46,37 +46,32 @@ h2,h3, p{
     margin: 0 auto; 
 }
 
-header ul{
-    padding: 0;
-    margin: 0;
-}
-
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2% 5% 2% 5%;
-    background-color: var(--header-color);
-}
-
-header li{
-    list-style-type: none;
-    display: inline-block;
-    
+    display: block;
 }
 
 header h3{
     color: var(--text-color);
 }
 
-header a{
+.nav_search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-color);
+    padding: 2% 5%;
+}
+
+.nav_search li{
+    display: inline-block;
+}
+.nav_search a{
     text-decoration: none;
     color: var(--text-color);
     padding: 0 10px;
-    
 }
 
-nav{
+.nav_menu{
     background-color: var(--settings-color);
 }
 
@@ -114,7 +109,7 @@ nav{
 } */
 
 .app main{
-    height: 81.5%;
+    height: 82%;
     /* overflow: auto; */
     overflow-y: scroll;
     background-color: var(--body-app-color);
@@ -209,7 +204,7 @@ nav{
 
 }
 
-.unread--message{
+/* .unread--message{
     width: 20px;
     height: 20px;
     background-color: var(--app-details-color);
@@ -217,13 +212,12 @@ nav{
 
     border-radius: 100%;
     text-align: center;
-    margin-top: 15px;
-
+    
     line-height: 1.4;
     position: absolute;
     right: -60px;
     
-}
+} */
 
 
 .profile__avatar img{
@@ -234,12 +228,14 @@ nav{
 
 .message__content{
     float: left;
+    /* width: 200px; */
     color: whitesmoke;
 }
 
 .message__status{
     float: right;
     color: #AAA;
+    
 }
 
 
