@@ -275,8 +275,39 @@ header h3{
     }
 }
 
-@media (orientation: landscape) and (min-width:1000px) {
+@media (orientation: landscape) and (min-width:920px) {
     body{
         font-size: 25px;
     }
+
+
+    .contacts__profile{
+        margin-right: 20px;
+    }
 }
+
+@media only screen and (min-width: 1200px) {
+    .contacts__profile{
+        margin-right: 20px;
+    }
+} 
+    
+@media only screen and (max-width: 400px) {
+
+    .app main{
+        height: 84%;
+    }
+
+    .profile__avatar{
+        height: 4em;
+        width: 4em;
+        margin-top: 0.4em;
+        margin-right: 0.4em;
+    }
+
+    .message__content{
+        margin-top: 0.4em;
+        width: 50%;
+    }
+} 
+
